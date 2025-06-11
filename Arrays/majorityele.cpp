@@ -30,7 +30,7 @@ public:
     }
 };
 
-//better soln is TC-O(n), SC-O(n)
+//better TC-O(n) , SC-O(n)
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
@@ -44,5 +44,32 @@ public:
     }
 };
 
-//better O(n) time, O(1) space
+//better O(n) time (+O(n) only if they say it may not happen), O(1) space
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int ele, cnt=0;
+        for(int i=0;i<nums.size();i++){
+            if(cnt==0){
+                cnt=1;
+                ele=nums[i];
+            }
+            else if(nums[i]==ele){
+                cnt++;
+            }
+            else{
+                cnt--;
+            }
+        }
+        int ct=0;
+        for(int iti : nums){
+            if(iti==ele) ct++;
+        }
+        if(ct>nums.size()/2) return ele;
+        else{
+            return -1;
+        }
+    }
+};
+
 
