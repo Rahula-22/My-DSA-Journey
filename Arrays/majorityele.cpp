@@ -44,7 +44,7 @@ public:
     }
 };
 
-//better O(n) time (+O(n) only if they say it may not happen), O(1) space
+//best moore's voting also to be precise (O(n) time +O(n) only if they say it may not happen) and we can say simply O(n) linear, O(1) space
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
