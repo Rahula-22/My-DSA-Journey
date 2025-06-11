@@ -2,7 +2,7 @@
 using namespace std;
 
 
-// best solution through counting 0,1,2 and filling TC- O(n), SC-O(1)
+// Best solution through counting 0,1,2 and filling TC- O(n), SC-O(1)
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
