@@ -2,7 +2,7 @@
 using namespace std;
 
 
-// Best solution through counting 0,1,2 and filling TC- O(n), SC-O(1)
+// Better solution through counting 0,1,2 and filling TC- O(N) + O(N), SC-O(1)
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
@@ -19,7 +19,7 @@ public:
     }
 };
 
-//Dutch National Flag algorithm  same efficiency
+// Best solution - Dutch National Flag algorithm  same efficiency
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
